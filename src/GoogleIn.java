@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 
 public class GoogleIn {
 
@@ -18,9 +20,19 @@ public class GoogleIn {
 			Thread.sleep(1000);
 			
 			driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Nagpur");
-			List<WebElement> Numofele = driver.findElements(By.xpath("//ul[@role='listbox']"));
 			
-			Numofele.get(2).click();
+//			Actions act = new Actions(driver);
+//			act.moveToElement(null)
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[2]/ul/li[7]/div/div[2]")).click();
+			
+//			List<WebElement> NoOFEle = driver.findElements(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[2]/ul"));
+//			System.out.println(NoOFEle.size());
+//			
+//			for(int i=1;i<=NoOF)
+			
+			
+			
 
 	}
 
